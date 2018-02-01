@@ -81,15 +81,16 @@
                     android:layout_alignParentLeft="true"
                     android:text="23"
                     android:textColor="#747474"
-                    android:textSize="100dp" />
+                    android:textSize="80dp" />
 
                 <TextView
                     android:id="@+id/degree_symbol"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
                     android:layout_gravity="start"
-                    android:layout_marginTop="20dp"
-                    android:layout_toRightOf="@+id/temperature"
+                    android:layout_marginTop="11dp"
+                    android:layout_toEndOf="@+id/temperature"
                     android:gravity="end"
                     android:text="º"
                     android:textSize="40dp"
@@ -99,19 +100,20 @@
                     android:id="@+id/tv_units"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_toRightOf="@+id/degree_symbol"
+                    android:layout_alignBaseline="@+id/degree_symbol"
+                    android:layout_alignBottom="@+id/degree_symbol"
+                    android:layout_toEndOf="@+id/degree_symbol"
                     android:text="C"
-                    android:textSize="60sp"
+                    android:textSize="50sp"
                     android:textStyle="" />
 
                 <ImageView
                     android:id="@+id/image_weather"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="23dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/weather_rain_day" />
 
